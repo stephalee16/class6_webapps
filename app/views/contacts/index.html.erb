@@ -1,0 +1,14 @@
+<h1>Contacts!</h1>
+
+<% contacts = Contact.all%>
+
+<p>There are <%=contacts.length%> contacts</p>
+
+<ul>
+  <% for i in contacts %>
+  
+  <% company= Company.find_by("id" => i["company_id"])%>
+  <li><%=i["first_name"]%> <%=i["last_name"]%>, Company: <%=company_name = company["name"]%></li>
+  
+  <% end %>
+</ul>

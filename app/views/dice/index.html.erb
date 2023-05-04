@@ -1,0 +1,15 @@
+<h1>Let's Play Some Crappy Craps!</h1>
+<p>Let's roll some die</p>
+
+<% die1=rand(1..6)
+   die2=rand(1..6)
+   total=die1+die2%>
+
+   <p>
+   <img src="/images/dice/<%=die1%>.svg">
+   <img src="/images/dice/<%=die2%>.svg">
+   </p>
+
+<p><h1>The total is <%= total %></h1></p>
+
+<a href="/dice">Roll again!</a>
